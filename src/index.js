@@ -1,6 +1,10 @@
-import React, { Component } from 'react';
-import QuoteBox from './QuoteBox';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './components/App';
+import './css/styles.css';
 
-const App = () => {
-  return <div />;
-};
+ReactDOM.render(
+  /* prettier ignore */
+  <App />,
+  document.getElementById('root')
+);
