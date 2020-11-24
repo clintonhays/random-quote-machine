@@ -3,9 +3,18 @@
 //
 
 #quote-box {
+  position: relative;
   width: 50%;
+  height: 300px;
   padding: 1em;
   margin: 0 auto;
+  margin-top: 30vh;
   background-color: #fff;
+  border-radius: 5px;
   color: blue;
+}
+
+.text-author {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }

@@ -9,7 +9,7 @@ class App extends Component {
     quote    : {},
   };
 
-  componentDidMount () {
+  getNewQuote = () => {
     fetch('https://quote-garden.herokuapp.com/api/v2/quotes/random')
       // prettier ignore
       .then((res) => res.json())
@@ -27,6 +27,10 @@ class App extends Component {
           });
         }
       );
+  };
+
+  componentDidMount () {
+    this.getNewQuote();
   }
 
   render () {
@@ -35,9 +39,13 @@ class App extends Component {
     if (error) {
       return <div>Error: {error.message}</div>;
     } else if (!isLoaded) {
-      return <div>Loading...</div>;
+      return (
+        <div className="loading">
+          <h2>Loading...</h2>
+        </div>
+      );
     } else {
-      return <QuoteBox quote={quote.quoteText} author={quote.quoteAuthor} />;
+      return <QuoteBox quote={quote.quoteText} author={quote.quoteAuthor} newQuote={this.getNewQuote} />;
     }
   }
 }
