@@ -5,7 +5,7 @@
 .buttonDiv {
   text-align: right;
 
-  #button {
+  .button {
     position: absolute;
     display: inline-block;
     bottom: 10px;
@@ -25,5 +25,19 @@
     &:active {
       transform: scale(.9);
     }
+  }
+
+  .twitter {
+    position: absolute;
+    display: inline-block;
+    bottom: 10px;
+    left: 10px;
+  }
+
+  .fbook {
+    position: absolute;
+    display: inline-block;
+    bottom: 10px;
+    left: 100px;
   }
 }

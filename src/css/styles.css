@@ -364,7 +364,7 @@ body {
   text-align: right;
 }
 
-.buttonDiv #button {
+.buttonDiv .button {
   position: absolute;
   display: inline-block;
   bottom: 10px;
@@ -378,12 +378,26 @@ body {
   padding: 10px;
 }
 
-.buttonDiv #button:hover {
+.buttonDiv .button:hover {
   cursor: pointer;
 }
 
-.buttonDiv #button:active {
+.buttonDiv .button:active {
   transform: scale(0.9);
+}
+
+.buttonDiv .twitter {
+  position: absolute;
+  display: inline-block;
+  bottom: 10px;
+  left: 10px;
+}
+
+.buttonDiv .fbook {
+  position: absolute;
+  display: inline-block;
+  bottom: 10px;
+  left: 100px;
 }
 
 #quote-box {
