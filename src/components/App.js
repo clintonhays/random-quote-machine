@@ -49,13 +49,14 @@ class App extends Component {
 
   newQuote = () => {
     const color = this.getColor();
-    const buttons = document.querySelectorAll('button');
+    const links = document.querySelectorAll('a');
 
     document.body.style.backgroundColor = color;
     document.getElementById('text').style.color = color;
     document.getElementById('author').style.color = color;
-    buttons.forEach((button) => {
-      button.style.backgroundColor = color;
+    document.querySelector('button').style.backgroundColor = color;
+    links.forEach((link) => {
+      link.style.backgroundColor = color;
     });
     this.getQuote();
   };

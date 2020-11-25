@@ -3,8 +3,17 @@ import React from 'react';
 const Buttons = ({ newQuote }) => {
   return (
     <div className="buttonDiv">
-      <button className="button twitter">Twitter!</button>
-      <button className="button fbook">Fbook</button>
+      <a className="button twitter" href="twitter.com/intent/tweet">
+        Twitter!
+      </a>
+      <a
+        className="button fbook"
+        href="http://www.facebook.com/sharer.php?u=https://crhdev.com"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Fbook
+      </a>
       <button className="button" onClick={() => newQuote()}>
         New Quote
       </button>
