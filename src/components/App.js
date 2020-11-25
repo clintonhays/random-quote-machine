@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import QuoteBox from './QuoteBox';
 
 class App extends Component {
@@ -18,7 +18,6 @@ class App extends Component {
       '#16DB93',
       '#83E377',
       '#B9E769',
-      '#EFEA5A',
       '#F1C453',
       '#F29E4C',
     ];
