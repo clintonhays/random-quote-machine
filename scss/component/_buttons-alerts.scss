@@ -14,7 +14,6 @@
     border: none;
     border-radius: 5px;
     font-size: 1.25em;
-    background-color: blue;
     color: white;
     padding: 10px;
 
@@ -27,7 +26,8 @@
     }
   }
 
-  .twitter {
+  .twitter,
+  .fbook {
     text-align: left;
     text-decoration: none;
     width: 50px;
@@ -39,13 +39,6 @@
   }
 
   .fbook {
-    text-align: left;
-    text-decoration: none;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    display: inline-block;
-    bottom: 10px;
     left: 100px;
   }
 }

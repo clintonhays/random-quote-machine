@@ -7,6 +7,7 @@ class App extends Component {
     error    : null,
     isLoaded : false,
     quote    : {},
+    color    : 'blue',
   };
 
   getColor = () => {
@@ -49,14 +50,10 @@ class App extends Component {
 
   newQuote = () => {
     const color = this.getColor();
-    const links = document.querySelectorAll('a');
 
     document.body.style.backgroundColor = color;
-    document.getElementById('text').style.color = color;
-    document.getElementById('author').style.color = color;
-    document.querySelector('button').style.backgroundColor = color;
-    links.forEach((link) => {
-      link.style.backgroundColor = color;
+    this.setState({
+      color : color,
     });
     this.getQuote();
   };
@@ -77,7 +74,14 @@ class App extends Component {
         </div>
       );
     } else {
-      return <QuoteBox quote={quote.quoteText} author={quote.quoteAuthor} newQuote={this.newQuote} />;
+      return (
+        <QuoteBox
+          quote={quote.quoteText}
+          author={quote.quoteAuthor}
+          newQuote={this.newQuote}
+          color={this.state.color}
+        />
+      );
     }
   }
 }
