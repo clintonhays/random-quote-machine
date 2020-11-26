@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500&display=swap');
+
 //
 // - - - - - - - - - - Base Styles - - - - - - - - - - //
 //
@@ -9,4 +11,13 @@
   line-height: 100px;
   white-space: nowrap;
   color: white;
+}
+
+#text,
+#author {
+  transition: color 800ms ease-in;
+}
+
+#text {
+  font-weight: 500;
 }

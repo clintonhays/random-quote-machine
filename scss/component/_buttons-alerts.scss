@@ -16,6 +16,7 @@
     font-size: 1.25em;
     color: white;
     padding: 10px;
+    transition: background-color 800ms ease-in-out;
 
     &:hover {
       cursor: pointer;
@@ -36,6 +37,7 @@
     display: inline-block;
     bottom: 10px;
     left: 10px;
+    transition: background-color 800ms ease-in-out;
   }
 
   .fbook {

@@ -8,6 +8,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -342,6 +343,8 @@ template {
 
 body {
   background-color: blue;
+  transition: background-color 800ms ease-in-out;
+  font-family: 'Spartan', sans-serif;
 }
 
 .loading {
@@ -351,6 +354,15 @@ body {
   line-height: 100px;
   white-space: nowrap;
   color: white;
+}
+
+#text,
+#author {
+  transition: color 800ms ease-in;
+}
+
+#text {
+  font-weight: 500;
 }
 
 /* ============================================= */
@@ -371,6 +383,7 @@ body {
   font-size: 1.25em;
   color: white;
   padding: 10px;
+  transition: background-color 800ms ease-in-out;
 }
 
 .buttonDiv .button:hover {
@@ -391,6 +404,7 @@ body {
   display: inline-block;
   bottom: 10px;
   left: 10px;
+  transition: background-color 800ms ease-in-out;
 }
 
 .buttonDiv .fbook {
