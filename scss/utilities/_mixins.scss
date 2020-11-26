@@ -1,3 +1,36 @@
 //
 // - - - - - - - - - - Mixins - - - - - - - - - - //
 //
+
+@mixin sansFont {
+  font-family: 'Spartan', sans-serif;
+}
+
+@mixin button {
+  display: inline-block;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.25em;
+  color: white;
+  padding: 10px;
+}
+
+@mixin linkButton {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+@mixin bgTrans {
+  transition: background-color 800ms ease-in-out;
+}
+
+@mixin colorTrans {
+  transition: color 800ms ease-in-out;
+}
+
+@mixin link {
+  text-align: left;
+  text-decoration: none;
+}

@@ -15,7 +15,7 @@
 
 #text,
 #author {
-  transition: color 800ms ease-in;
+  @include colorTrans;
 }
 
 #text {
