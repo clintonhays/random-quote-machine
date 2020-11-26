@@ -6,7 +6,7 @@ const Buttons = ({ newQuote, color }) => {
       <a
         id="tweet-quote"
         className="button twitter"
-        href="twitter.com/intent/tweet"
+        href="twitter.com/intent/tweet?url=crhdev.com/random-quote-machine"
         target="_blank"
         rel="noreferrer"
         style={{ backgroundColor: color }}
@@ -17,7 +17,7 @@ const Buttons = ({ newQuote, color }) => {
       </a>
       <a
         className="button fbook"
-        href="http://www.facebook.com/sharer.php?u=https://crhdev.com"
+        href="http://www.facebook.com/sharer.php?u=https://crhdev.com/random-quote-machine"
         target="_blank"
         rel="noreferrer"
         style={{ backgroundColor: color }}
