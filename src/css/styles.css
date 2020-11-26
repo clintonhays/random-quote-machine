@@ -342,16 +342,23 @@ template {
 }
 
 body {
+  font-family: "Spartan", sans-serif;
   background-color: blue;
   transition: background-color 800ms ease-in-out;
-  font-family: 'Spartan', sans-serif;
+}
+
+#root {
+  height: 100vh;
+  position: relative;
 }
 
 .loading {
   text-align: center;
-  padding-top: 20em;
-  height: 100px;
-  line-height: 100px;
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   white-space: nowrap;
   color: white;
 }
@@ -368,10 +375,6 @@ body {
 /* ============================================= */
 /*          Components Imports                   */
 /* ============================================= */
-.buttonDiv {
-  text-align: right;
-}
-
 .buttonDiv .button {
   position: absolute;
   bottom: 10px;
@@ -380,7 +383,7 @@ body {
   outline: none;
   border: none;
   border-radius: 5px;
-  font-size: 1.25em;
+  font-size: 1em;
   color: white;
   padding: 10px;
   transition: background-color 800ms ease-in-out;
@@ -396,34 +399,99 @@ body {
 
 .buttonDiv .twitter,
 .buttonDiv .fbook {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
   display: inline-block;
-  width: 50px;
-  height: 50px;
-  text-align: left;
-  text-decoration: none;
+  width: 20px;
+  height: 20px;
   transition: background-color 800ms ease-in-out;
 }
 
+.buttonDiv .twitter {
+  left: 10px;
+}
+
 .buttonDiv .fbook {
-  left: 100px;
+  left: 60px;
+}
+
+.buttonDiv svg {
+  height: 20px;
+  width: 20px;
 }
 
 #quote-box {
-  position: relative;
-  width: 50%;
-  height: 300px;
+  width: 80%;
+  height: 400px;
+  margin-top: 8vh;
   padding: 1em;
-  margin: 0 auto;
-  margin-top: 30vh;
   background-color: #fff;
   border-radius: 5px;
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.text-author {
-  padding-top: 40px;
-  padding-bottom: 40px;
+#quote-box .text-author {
+  margin-top: 0;
+  padding-top: 0;
+  height: 325px;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+#quote-box .text-author::-webkit-scrollbar {
+  display: none;
+}
+
+#quote-box #text {
+  margin-top: 0;
+}
+
+#quote-box .buttonDiv {
+  height: 25px;
+  text-align: right;
+}
+
+@media (min-width: 500px) {
+  #quote-box {
+    width: 80%;
+    height: 400px;
+  }
+  #quote-box .text-author {
+    padding-top: 25px;
+  }
+  .buttonDiv .twitter,
+  .buttonDiv .fbook {
+    position: absolute;
+    bottom: 10px;
+    height: 20px;
+    width: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .buttonDiv .twitter,
+  .buttonDiv .fbook {
+    height: 30px;
+    width: 30px;
+  }
+  .buttonDiv .fbook {
+    left: 70px;
+  }
+  .buttonDiv svg {
+    height: 30px;
+    width: 30px;
+  }
+  .buttonDiv .button {
+    font-size: 1.25em;
+  }
+}
+
+@media (min-width: 1024px) {
+  #quote-box {
+    width: 60%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

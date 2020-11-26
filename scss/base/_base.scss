@@ -3,7 +3,12 @@
 //
 
 body {
+  font-family: $sansFont;
   background-color: blue;
   @include bgTrans;
-  @include sansFont;
+}
+
+#root {
+  height: 100vh;
+  position: relative;
 }

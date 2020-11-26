@@ -3,17 +3,33 @@
 //
 
 #quote-box {
-  position: relative;
-  width: 50%;
-  height: 300px;
+  width: 80%;
+  height: 400px;
+  margin-top: 8vh;
   padding: 1em;
-  margin: 0 auto;
-  margin-top: 30vh;
   background-color: #fff;
   border-radius: 5px;
-}
+  @include center;
 
-.text-author {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  .text-author {
+    margin-top: 0;
+    padding-top: 0;
+    height: 325px;
+    overflow: scroll;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  #text {
+    margin-top: 0;
+  }
+
+  .buttonDiv {
+    height: 25px;
+    text-align: right;
+  }
 }

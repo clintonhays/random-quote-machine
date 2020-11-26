@@ -3,8 +3,6 @@
 //
 
 .buttonDiv {
-  text-align: right;
-
   .button {
     position: absolute;
     bottom: 10px;
@@ -23,15 +21,20 @@
 
   .twitter,
   .fbook {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
     @include linkButton;
-    @include link;
     @include bgTrans;
   }
 
+  .twitter {
+    left: 10px;
+  }
+
   .fbook {
-    left: 100px;
+    left: 60px;
+  }
+
+  svg {
+    height: 20px;
+    width: 20px;
   }
 }

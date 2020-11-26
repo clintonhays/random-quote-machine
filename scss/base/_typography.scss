@@ -6,9 +6,7 @@
 
 .loading {
   text-align: center;
-  padding-top: 20em;
-  height: 100px;
-  line-height: 100px;
+  @include center;
   white-space: nowrap;
   color: white;
 }

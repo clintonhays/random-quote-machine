@@ -1,3 +1,53 @@
 //
 // - - - - - - - - - - Media Queries - - - - - - - - - - //
 //
+
+@media (min-width: $sm) {
+  #quote-box {
+    width: 80%;
+    height: 400px;
+
+    .text-author {
+      padding-top: 25px;
+    }
+  }
+
+  .buttonDiv {
+    .twitter,
+    .fbook {
+      position: absolute;
+      bottom: 10px;
+      height: 20px;
+      width: 20px;
+    }
+  }
+}
+
+@media (min-width: $med) {
+  .buttonDiv {
+    .twitter,
+    .fbook {
+      height: 30px;
+      width: 30px;
+    }
+
+    .fbook {
+      left: 70px;
+    }
+
+    svg {
+      height: 30px;
+      width: 30px;
+    }
+
+    .button {
+      font-size: 1.25em;
+    }
+  }
+}
+
+@media (min-width: $lg) {
+  #quote-box {
+    width: 60%;
+  }
+}
