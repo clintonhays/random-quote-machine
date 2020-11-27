@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Quote = ({ quote, author, color }) => {
   return (
@@ -11,6 +12,12 @@ const Quote = ({ quote, author, color }) => {
       </p>
     </div>
   );
+};
+
+Quote.propTypes = {
+  quote  : PropTypes.string,
+  author : PropTypes.string,
+  color  : PropTypes.string,
 };
 
 export default Quote;

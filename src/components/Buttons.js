@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Buttons = ({ newQuote, color }) => {
   return (
@@ -31,6 +32,11 @@ const Buttons = ({ newQuote, color }) => {
       </button>
     </div>
   );
+};
+
+Buttons.propTypes = {
+  color    : PropTypes.string,
+  newQuote : PropTypes.func,
 };
 
 export default Buttons;
