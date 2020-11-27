@@ -7,7 +7,7 @@ const QuoteBox = ({ quote, author, newQuote, color }) => {
   return (
     <div id="quote-box">
       <Quote quote={quote} author={author} color={color} />
-      <Buttons newQuote={newQuote} color={color} quote={quote} />
+      <Buttons newQuote={newQuote} color={color} />
     </div>
   );
 };
