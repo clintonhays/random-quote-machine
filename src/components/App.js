@@ -28,14 +28,14 @@ class App extends Component {
   };
 
   getQuote = () => {
-    fetch('https://quote-garden.herokuapp.com/api/v2/quotes/random')
+    fetch('https://quote-garden.herokuapp.com/api/v3/quotes/random')
       // prettier ignore
       .then((res) => res.json())
       .then(
         (result) => {
           this.setState({
             isLoaded : true,
-            quote    : result.quote,
+            quote    : result.data[0],
           });
         },
         (error) => {
